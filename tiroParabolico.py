@@ -1,7 +1,10 @@
+#Luis Fernando Tarango Falix   A00827678
+#Hiram David Arguelles Ramirez A00826301
+
 from random import randrange
 from turtle import *
 from freegames import vector
-
+#Se define los vectores parael proyectil, la velocidad de este y los objetivos 
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
@@ -60,7 +63,8 @@ def move():
             target.x=200;
 
     ontimer(move, 50)
-
+    
+#Se definen los parametros para la ventana de juego y controles 
 setup(420, 420, 370, 0)
 hideturtle()
 up()
